@@ -60,7 +60,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\ConstDefine\MVCCmdDefine.cs" />
+    <Compile Include="Assets\Scripts\ConstDefine\NotifiEnum.cs" />
     <Compile Include="Assets\Scripts\MVCScripts\App.cs" />
     <Compile Include="Assets\Scripts\MVCScripts\Controller\LoginCmd\LoginCmd.cs" />
     <Compile Include="Assets\Scripts\MVCScripts\Controller\PlayCommand.cs" />
