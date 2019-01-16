@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using KBEngine;
 /// <summary>
 /// 加载场景管理类
 /// </summary>
@@ -42,7 +41,7 @@ public class ScenceMgr : MonoBehaviour
 
         if (!m_asyncOp.isDone)
         {
-            Dbg.ERROR_MSG(string.Format("加载场景 ={0}未完成", sceneName));
+            Debug.LogError(string.Format("加载场景 ={0}未完成", sceneName));
         }
     }
 

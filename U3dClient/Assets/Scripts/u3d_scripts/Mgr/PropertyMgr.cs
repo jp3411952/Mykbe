@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Security.Policy;
 using LitJson;
 using mmowar;
 using UnityEngine;
@@ -16,7 +15,7 @@ using UnityEngine;
 
     private float delay = 0.1f;
 
-    public readonly static  Dictionary<uint, AvatarProperty> avatarProperty =new Dictionary<uint, AvatarProperty>(); 
+    public readonly static  Dictionary<uint, object> avatarProperty =new Dictionary<uint, object>(); 
 
     private void Awake()
     {
@@ -52,14 +51,14 @@ using UnityEngine;
         switch (obj.name)
         {
             case "AvatarProperty":
-                ParsProperty<AvatarProperty>(jd, avatarProperty);
+               // ParsProperty<object>(jd, avatarProperty);
                 break;
 
         }
    
     }
 
-    public void ParsProperty<T>(JsonData jd,Dictionary<uint,T> properdic) where T: BaseProperty
+    public void ParsProperty<T>(JsonData jd,Dictionary<uint,T> properdic) 
     {
         if (jd == null)
         {

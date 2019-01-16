@@ -1,5 +1,4 @@
 ﻿
-using KBEngine;
 using mmowar;
 using System;
 using System.Collections;
@@ -72,13 +71,13 @@ public class ResouceMgr : MonoBehaviour
       
         while (!m_resourceReq.isDone)
         {
-            Dbg.ERROR_MSG(string.Format("资源 ={0}未完成", rd.pathName));
+            Debug.LogError(string.Format("资源 ={0}未完成", rd.pathName));
             yield return null;
         }
 
         if (m_resourceReq.asset == null)
         {
-            Dbg.ERROR_MSG(string.Format("资源 ={0}不存在", rd.pathName));
+            Debug.LogError(string.Format("资源 ={0}不存在", rd.pathName));
             yield  break;
         }
 
@@ -89,7 +88,7 @@ public class ResouceMgr : MonoBehaviour
 
             if (go == null)
             {
-                Dbg.ERROR_MSG(string.Format("资源未创建成功"));
+                Debug.LogError(string.Format("资源未创建成功"));
                 yield break;
             }
             CoroutineCallBack(rd, go);
@@ -118,13 +117,13 @@ public class ResouceMgr : MonoBehaviour
 
         while (!m_resourceReq.isDone)
         {
-            Dbg.ERROR_MSG(string.Format("资源 ={0}未完成", tpath));
+            Debug.LogError(string.Format("资源 ={0}未完成", tpath));
             yield return null;
         }
 
         if (m_resourceReq.asset == null)
         {
-            Dbg.ERROR_MSG(string.Format("资源 ={0}不存在", tpath));
+            Debug.LogError(string.Format("资源 ={0}不存在", tpath));
             yield break;
         }
 
@@ -135,7 +134,7 @@ public class ResouceMgr : MonoBehaviour
 
             if (go == null)
             {
-                Dbg.ERROR_MSG(string.Format("资源未创建成功"));
+                Debug.LogError(string.Format("资源未创建成功"));
                 yield break;
             }
             CoroutineCallBack(tkey, go);
@@ -156,13 +155,13 @@ public class ResouceMgr : MonoBehaviour
 
         while (!m_resourceReq.isDone)
         {
-            Dbg.ERROR_MSG(string.Format("资源 ={0}未完成", tpath));
+            Debug.LogError(string.Format("资源 ={0}未完成", tpath));
             yield return null;
         }
 
         if (m_resourceReq.asset == null)
         {
-            Dbg.ERROR_MSG(string.Format("资源 ={0}不存在", tpath));
+            Debug.LogError(string.Format("资源 ={0}不存在", tpath));
             yield break;
         }
 
@@ -173,7 +172,7 @@ public class ResouceMgr : MonoBehaviour
 
             if (go == null)
             {
-                Dbg.ERROR_MSG(string.Format("资源未创建成功"));
+                Debug.LogError(string.Format("资源未创建成功"));
                 yield break;
             }
             CoroutineCallBack(go);

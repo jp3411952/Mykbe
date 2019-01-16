@@ -58,25 +58,25 @@
         /// <summary>
         ///  相对路径
         /// </summary>
-        public static string AudioClipRelaPath      = "AudioClip";
-        public static string TextFileRelaPath = "ResFile";
-        public static string PrefabRealPath         = "Prefab";
-        public static string AnimaRealPath          = "Anima";
-        public static string SpriteRealPath = "Sprite";
-        public static string PublicPath =       "Public";
-        public static string PropertyFile = "PropertyFile";
+        public const string AudioClipRelaPath      = "AudioClip";
+        public const string TextFileRelaPath = "ResFile";
+        public const string PrefabRealPath         = "Prefab";
+        public const string AnimaRealPath          = "Anima";
+        public const string SpriteRealPath = "Sprite";
+        public const string PublicPath =       "Public";
+        public const string PropertyFile = "PropertyFile";
         public const string  PathHua = "/";
 
 
-        public static string UIRealPath             = "/UI";
-        public static string GoRealPath             = "/GO";
+        public const string UIRealPath             = "/UI";
+        public const string GoRealPath             = "/GO";
      
-        public static string Pre_UIorGO_ImgRealPath = "/Img";
-        public static string Pre_UIorGO_EffRealPath = "/Effect";
+        public const string Pre_UIorGO_ImgRealPath = "/Img";
+        public const string Pre_UIorGO_EffRealPath = "/Effect";
  
 
-        public static string LoginRelaPath = "/Login";
-        public static string SelectAvateRealPath = "/SelectAvate";
+        public const string LoginRelaPath = "/Login";
+        public const string SelectAvateRealPath = "/SelectAvate";
 
          static PathMgr()
         {
@@ -88,9 +88,9 @@
         {
             switch (res)
             {
-                case (int)ResFilelis.Prefab_UI_EM:
-                    m_dicPerfab_UI[key] = name;
-                    break;
+                //case (int)ResFilelis.Prefab_UI_EM:
+                //    m_dicPerfab_UI[key] = name;
+                //    break;
                 default:
                     break;
             }
@@ -155,9 +155,9 @@
             string path = "";
             switch (ResType)
             {
-                case (int)ResFilelis.Prefab_UI_EM:
-                    m_dicPerfab_UI.TryGetValue(Reskey, out path);
-                    break;
+                //case (int)ResFilelis.Prefab_UI_EM:
+                //    m_dicPerfab_UI.TryGetValue(Reskey, out path);
+                //    break;
                 default:
                     break;
             }
@@ -200,12 +200,12 @@
         protected FileSuffix()
         {
         }
-        public static string SpriteSuff = ".sprite";
-        public static string PrefabSuff = ".prefab";
-        public static string PngSuff = ".png";
-        public static string AnimationSuff = ".animation";
-        public static string AnimatorSuff = ".animator";
-        public static string Map3 = ".mp3";
+        public const string SpriteSuff = ".sprite";
+        public const string PrefabSuff = ".prefab";
+        public const string PngSuff = ".png";
+        public const string AnimationSuff = ".animation";
+        public const string AnimatorSuff = ".animator";
+        public const string Map3 = ".mp3";
     }
 
 }

@@ -30,7 +30,7 @@ namespace PureMVC.Patterns
         /// <remarks>
         ///     <para>Typically, a <c>Mediator</c> will be written to serve one specific control or group controls and so, will not have a need to be dynamically named</para>
         /// </remarks>
-		public const string NAME = "Mediator";
+		public static string NAME = "Mediator";
 
 		#endregion
 
