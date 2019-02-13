@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\soonyo\.Rider2018.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\soonyo\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_U3dClient.-1944355595.00" t="ExcludeRecursive" />
-    <e p="F:\kbeClient\U3dClient" t="IncludeRecursive">
+    <e p="C:\Users\asus\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\asus\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_U3dClient.-1390327931.00" t="ExcludeRecursive" />
+    <e p="E:\Github\kbeClient\U3dClient" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
-      <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="AppSettings.cs" t="Include" />
@@ -186,71 +185,6 @@
             </e>
           </e>
         </e>
-        <e p="Plugins" t="Include">
-          <e p="kbengine_unity3d_plugins" t="Include">
-            <e p="AccountBase.cs" t="Include" />
-            <e p="AvatarBase.cs" t="Include" />
-            <e p="Blowfish.cs" t="Include" />
-            <e p="Bundle.cs" t="Include" />
-            <e p="CustomDataTypes.cs" t="Include" />
-            <e p="DataTypes.cs" t="Include" />
-            <e p="Dbg.cs" t="Include" />
-            <e p="deps" t="Include">
-              <e p="KCP.cs" t="Include" />
-            </e>
-            <e p="EncryptionFilter.cs" t="Include" />
-            <e p="Entity.cs" t="Include" />
-            <e p="EntityCall.cs" t="Include" />
-            <e p="EntityCallAccountBase.cs" t="Include" />
-            <e p="EntityCallAvatarBase.cs" t="Include" />
-            <e p="EntityCallGateBase.cs" t="Include" />
-            <e p="EntityCallMonsterBase.cs" t="Include" />
-            <e p="EntityCallNPCBase.cs" t="Include" />
-            <e p="EntityCallSpaceBase.cs" t="Include" />
-            <e p="EntityCallSpaceDuplicateBase.cs" t="Include" />
-            <e p="EntityCallSpacesBase.cs" t="Include" />
-            <e p="EntityCallSpawnPointBase.cs" t="Include" />
-            <e p="EntityCallTestBase.cs" t="Include" />
-            <e p="EntityCallTestNoBaseBase.cs" t="Include" />
-            <e p="EntityComponent.cs" t="Include" />
-            <e p="EntityDef.cs" t="Include" />
-            <e p="Event.cs" t="Include" />
-            <e p="GateBase.cs" t="Include" />
-            <e p="KBEMain.cs" t="Include" />
-            <e p="KBEngine.cs" t="Include" />
-            <e p="KBEngineArgs.cs" t="Include" />
-            <e p="KBETypes.cs" t="Include" />
-            <e p="Math.cs" t="Include" />
-            <e p="MemoryStream.cs" t="Include" />
-            <e p="MessageReaderBase.cs" t="Include" />
-            <e p="MessageReaderKCP.cs" t="Include" />
-            <e p="MessageReaderTCP.cs" t="Include" />
-            <e p="Messages.cs" t="Include" />
-            <e p="Method.cs" t="Include" />
-            <e p="MonsterBase.cs" t="Include" />
-            <e p="NetworkInterfaceBase.cs" t="Include" />
-            <e p="NetworkInterfaceKCP.cs" t="Include" />
-            <e p="NetworkInterfaceTCP.cs" t="Include" />
-            <e p="NPCBase.cs" t="Include" />
-            <e p="ObjectPool.cs" t="Include" />
-            <e p="PacketReceiverBase.cs" t="Include" />
-            <e p="PacketReceiverKCP.cs" t="Include" />
-            <e p="PacketReceiverTCP.cs" t="Include" />
-            <e p="PacketSenderBase.cs" t="Include" />
-            <e p="PacketSenderKCP.cs" t="Include" />
-            <e p="PacketSenderTCP.cs" t="Include" />
-            <e p="Profile.cs" t="Include" />
-            <e p="Property.cs" t="Include" />
-            <e p="ScriptModule.cs" t="Include" />
-            <e p="ServerErrorDescrs.cs" t="Include" />
-            <e p="SpaceBase.cs" t="Include" />
-            <e p="SpaceDuplicateBase.cs" t="Include" />
-            <e p="SpacesBase.cs" t="Include" />
-            <e p="SpawnPointBase.cs" t="Include" />
-            <e p="TestBase.cs" t="Include" />
-            <e p="TestNoBaseBase.cs" t="Include" />
-          </e>
-        </e>
         <e p="Scripts" t="Include">
           <e p="PureMVCFramework" t="Include">
             <e p="Core" t="Include">
@@ -355,6 +289,46 @@
           </e>
         </e>
         <e p="StreamingAssets" t="Include">
+          <e p="Lua" t="Include">
+            <e p="LuaMvc" t="Include">
+              <e p="Class.lua.txt" t="Include" />
+              <e p="Commands" t="Include">
+                <e p="CmdCode.lua.txt" t="Include" />
+                <e p="CmdRequire.lua.txt" t="Include" />
+                <e p="MultipleCmd.lua.txt" t="Include" />
+                <e p="SampleCmd.lua.txt" t="Include" />
+                <e p="StartGameCmd.lua.txt" t="Include" />
+              </e>
+              <e p="CreateNewTable.lua.txt" t="Include" />
+              <e p="CsClassStr.lua.txt" t="Include" />
+              <e p="DefRequire.lua.txt" t="Include" />
+              <e p="EndRequire.lua.txt" t="Include" />
+              <e p="GameEvent.lua.txt" t="Include" />
+              <e p="MainLua.lua.txt" t="Include" />
+              <e p="Mediators" t="Include">
+                <e p="LoginMediator.lua.txt" t="Include" />
+                <e p="Mediator.lua.txt" t="Include" />
+                <e p="MediatorRequire.lua.txt" t="Include" />
+              </e>
+              <e p="Models" t="Include">
+                <e p="ModelRequire.lua.txt" t="Include" />
+              </e>
+              <e p="MVCBaseMgr.lua.txt" t="Include" />
+              <e p="MVCFacade.lua.txt" t="Include" />
+              <e p="Observer.lua.txt" t="Include" />
+              <e p="Proxys" t="Include">
+                <e p="AccountProxy.lua.txt" t="Include" />
+                <e p="Proxy.lua.txt" t="Include" />
+                <e p="ProxyRequire.lua.txt" t="Include" />
+              </e>
+              <e p="SameParents.lua.txt" t="Include" />
+              <e p="Views" t="Include">
+                <e p="LuaBaseView.lua.txt" t="Include" />
+                <e p="LuaLoginView.lua.txt" t="Include" />
+                <e p="ViewRequire.lua.txt" t="Include" />
+              </e>
+            </e>
+          </e>
           <e p="Setting" t="Include">
             <e p="GameConfig" t="Include">
               <e p="JustCopy.txt" t="Include" />
