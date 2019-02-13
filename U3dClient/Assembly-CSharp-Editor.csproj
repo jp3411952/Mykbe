@@ -71,6 +71,7 @@
     <Compile Include="Assets\Editor\ImageSlicer.cs" />
     <Compile Include="Assets\Editor\SpritePacker.cs" />
     <Compile Include="Assets\Editor\TestSaveSprite.cs" />
+    <Compile Include="Assets\Editor\XLuaCustomExport.cs" />
     <Compile Include="Assets\KSFramework\Editor\I18NCustom\StringsTableI18NCollector.cs" />
     <Compile Include="Assets\KSFramework\Editor\I18NCustom\TableColumnCollector.cs" />
     <Compile Include="Assets\KSFramework\Editor\KSFrameworkCustom.cs" />
@@ -876,6 +877,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{98021D85-AE74-1786-2DC6-377E79A0DC44}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{F47915EC-0DE6-EF9A-297C-FF3CB219867C}</Project>
       <Name>Assembly-CSharp</Name>
