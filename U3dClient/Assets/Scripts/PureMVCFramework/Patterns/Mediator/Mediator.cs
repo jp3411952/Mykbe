@@ -95,8 +95,13 @@ namespace PureMVC.Patterns
 		{
 		}
 
+		public void destroy()
+		{
+			throw new NotImplementedException();
+		}
 
-        public virtual void HandleNotify<SendEntity, Param>(INotification<SendEntity, Param> notification) {
+
+		public virtual void HandleNotify<SendEntity, Param>(INotification<SendEntity, Param> notification) {
         }
 
         public void OnNotify<SendEntity, Param>( INotification<SendEntity, Param> notification)

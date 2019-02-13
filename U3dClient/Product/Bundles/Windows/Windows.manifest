@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 3861143852
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: scene/scene1001/scene1001.unity.k
+      Dependencies: {}
+    Info_1:
+      Name: scene/scene1002/scene1002.unity.k
+      Dependencies: {}
+    Info_2:
+      Name: images/red.png.k
+      Dependencies: {}
+    Info_3:
+      Name: ui/login.prefab.k
+      Dependencies: {}
+    Info_4:
+      Name: ui/main.prefab.k
+      Dependencies: {}
+    Info_5:
+      Name: ui/billboard.prefab.k
+      Dependencies: {}

@@ -195,6 +195,10 @@ namespace PureMVC.Core
 
         public void OverLife()
         {
+            foreach (var key in m_mediatorMap.Keys)
+            {
+                m_mediatorMap[key] = null;
+            }
             m_mediatorMap.Clear();
         }
 

@@ -112,5 +112,10 @@ namespace PureMVC.Interfaces
 		/// Called by the View when the Mediator is removed
 		/// </summary>
 		void OnRemove();
+
+        /// <summary>
+        /// 销毁
+        /// </summary>
+        void destroy();
 	}
 }

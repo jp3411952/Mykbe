@@ -1,13 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace mmowar {  
-/// <summary>
-/// 模仿NGUI实现的
-/// </summary>
-public class UIEventTriggerListener : EventTrigger
+namespace mmowar
+{
+    /// <summary>
+    /// 模仿NGUI实现的
+    /// </summary>
+    public class UIEventTriggerListener : EventTrigger
 {
 
     public delegate void VoidDelegate(PointerEventData eventData);
