@@ -1,0 +1,23 @@
+--- Time: 2019/1/24 17:34
+--- Auth: ZJy
+--- 功能
+local SampleCmd = require('SampleCmd')
+local StartGameCmd = Class(SampleCmd)
+
+function StartGameCmd:Execute(sender,param)
+		
+end
+
+
+
+return StartGameCmd
+
+
+
+
+
+
+ 
+
+
+

@@ -1,0 +1,109 @@
+--- Time: 2019/1/24 11:08
+--- Auth: ZJy
+--- 功能
+
+
+local MVCBaseMgr = Class()
+
+function MVCBaseMgr:ctor()
+    self._member ={}
+end
+
+function MVCBaseMgr:AddMember(name, mem)
+    self._member[name] = mem
+end
+
+function MVCBaseMgr:RemoveMember(name)
+    if self._member == nil then
+        return   -- 成员新建列表
+    end
+    if name == nil then
+        return
+    end
+    if self._member[name]  == nil then
+        return   -- 成员新建列表
+    end
+    self._member[name] = nil
+end
+
+
+function MVCBaseMgr:Test()
+    print('MVCBaseMgrTest')
+end
+function MVCBaseMgr:GetMember(name) 
+    return self._member[name]
+end
+
+function MVCBaseMgr:GetMemberTab()
+    return self._member
+end
+
+--- 清除所有命令
+function MVCBaseMgr:RemoveAllMember()
+    if self._member == nil then
+        return   -- 成员新建列表
+    end
+    for i,k in pairs(self._member) do
+        self._member[i] = nil
+    end
+    self._member = nil
+end
+
+local observerMgr = Class(MVCBaseMgr)
+
+function observerMgr:AddMember(name, obser)
+    if  self._member[name] == nil then
+        -- 观察者列表
+        self._member[name] = {} --添加观察者列表
+    else
+        for _,observer in pairs(self._memberp[name]) do -- 遍历列表
+            if obser == observer then -- 是相同的观察者就进行添加了
+                return
+            end
+        end
+    end
+    table.insert(self._member[name],mem) -- 向列表里面插入数据
+end
+
+function observerMgr:RemoveMember(code, obser)
+    if self._member == nil then
+        return   -- 成员新建列表
+    end
+    if self._member[code]  == nil or obser == nil then
+        return   -- 成员新建列表
+    end
+    for i,observer in pairs(self._memberp[code]) do -- 遍历列表
+        if observer == obser then
+            self._member[code][i] =nil --把单个观察者值空
+            table.remove(self._member[code],i)
+            break
+        end
+    end
+end
+
+function observerMgr:RemoveAllMember()
+    if self._member == nil then
+        return   -- 成员新建列表
+    end
+    for i,obs in pairs(self._member) do
+        for j,k in pairs(obs) do
+            self._member[i][j] = nil
+        end
+    end
+    self._member = nil
+end
+
+return {
+    MVCBaseMgr = MVCBaseMgr,
+    observerMgr =observerMgr
+}
+
+
+
+
+
+
+ 
+
+
+

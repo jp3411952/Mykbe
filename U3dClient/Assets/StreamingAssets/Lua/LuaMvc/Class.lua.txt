@@ -1,0 +1,58 @@
+--- Time: 2019/1/24 13:29
+--- Auth: ZJy
+--- 功能
+
+--local _class = {} -- 所有类
+function Class(super)
+	local class_type = {} -- 类表定义创建 与构造的方法
+	class_type.ctor = false
+	class_type.super = super
+	class_type.New = function(self,...)
+		local obj = {}   -- 新对象
+		do  -- 执行内部函数
+			local create  -- 创建create方法
+			create = function(c, ...)
+				if c.super then
+					create(c.super, ...) -- 先创建父类
+				end
+				if c.ctor then
+					c.ctor(obj, ...)   -- 如果有构造函数调用构造函数
+				end
+			end
+			create(class_type, ...)   -- 创建自己
+		end
+		setmetatable(obj, self) --新对象 的元表指向类表 vtbl 就是新建的表
+		self.__index =self
+		return obj
+	end
+	
+--[[	local vtbl = {}              -- 又是一个空表
+	_class[class_type] = vtbl    -- 类表有数据
+	setmetatable(class_type, { __newindex = function(t, k, v)
+		vtbl[k] = v    --- 新增的属性实际是放到vtbl里面
+	end})
+	
+	
+	if super then  -- 如果有父类 
+		setmetatable(vtbl, { __index = function(t, k)
+			local ret = _class[super][k]  -- 定位父类的位置
+			vtbl[k] = ret                 -- 将父类
+			return ret
+		end})
+		
+	end]]
+	return class_type
+end
+
+
+
+
+
+
+
+
+
+ 
+
+
+

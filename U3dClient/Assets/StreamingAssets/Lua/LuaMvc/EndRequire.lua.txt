@@ -1,0 +1,12 @@
+--- zjy
+--- 20190123
+--- 最后加载的文件
+
+
+--- 重新加載資源
+function   ReloadScripts(modelname)
+	if package.loaded[modelname] then
+		package.loaded[modelname] = nil
+	end
+	require(modelname)
+end

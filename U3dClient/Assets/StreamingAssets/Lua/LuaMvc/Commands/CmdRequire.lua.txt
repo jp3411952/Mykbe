@@ -1,0 +1,7 @@
+--- 创建时间: 2019/1/27 22:34
+--- 作者: zjy
+--- 功能: 所有命令加载文件
+require('SampleCmd')
+require('MultipleCmd')
+require('CmdCode')
+

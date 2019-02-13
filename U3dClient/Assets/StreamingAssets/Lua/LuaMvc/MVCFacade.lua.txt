@@ -1,0 +1,97 @@
+--- facade接口
+
+-- 返回两个Mgr
+local Mgrs = require('MVCBaseMgr')
+local MVCBaseMgr = Mgrs.MVCBaseMgr
+local observerMgr = Mgrs.observerMgr
+-- 单独定义观察者管理者方便重写代码
+local MVCFacade = Class()
+local thisFacade = nil
+--- 获取mvc接口，全局最好唯一
+function   GetMvcFacade()
+	if thisFacade == nil then
+		thisFacade = MVCFacade:New(MVCBaseMgr:New(),
+				                   MVCBaseMgr:New(),
+			                       MVCBaseMgr:New(),
+				                   observerMgr)
+	end
+	return thisFacade
+end
+local StartGameCmd = require('StartGameCmd')
+
+
+function MVCFacade:ctor(cmdmgr,proxymgr,mediamgr,obmgr)
+	cmdmgr:Test()
+	self._cmdMgr = cmdmgr 
+	self._proxyMgr= proxymgr
+	self._mediatorMgr = mediamgr
+	self._ObserverMgr = obmgr
+end
+--- 初始化
+function  MVCFacade:Init() 
+	self:AddCmd(CmdCode.StartGame,StartGameCmd:New(thisFacade))
+end
+
+--- 添加命令
+function MVCFacade:AddCmd(cmdcode,cmd)
+	if self._cmdMgr:GetMember(cmdcode) then
+		return
+	end
+	self._cmdMgr:AddMember(cmdcode,cmd)
+end
+function MVCFacade:RemoveCmd(cmdcode)
+	self._cmdMgr:RemoveMember(cmdcode)
+end
+
+--- 添加中介者
+function MVCFacade:AddMediator(name,mediator)
+	if self._mediatorMgr:GetMember(name) then
+		return
+	end
+	local cmds =  mediator:GetListenCmds() -- 获取需要监听的命令
+	for _,code in ipairs(cmds) do
+		self:RigisterObserver(code,mediator)
+	end
+	self._mediatorMgr:AddMember(name,mediator)
+end
+function MVCFacade:RemoveMediator(name)
+	local mediator = self._mediatorMgr:GetMember(name)
+	if mediator == nil then
+		return
+	end
+	local cmds =  mediator:GetListenCmds() -- 获取需要监听的命令
+	for _,code in ipairs(cmds) do
+		self:RemoveObserver(code,mediator)
+	end
+	
+	self._mediatorMgr:RemoveMember(name)
+end
+
+function MVCFacade:RigisterObserver(cmdcode,observer)
+	self._ObserverMgr:AddMember(cmdcode,observer)
+end
+
+function MVCFacade:RemoveObserver(cmdcode,observer)
+	self._ObserverMgr:RemoveMember(cmdcode,obesrver)
+end
+
+function MVCFacade:AddProxy(name,proxy)
+	if self._proxyMgr:GetMember(name) then
+		return
+	end
+	self._proxyMgr:AddMember(name,proxy)
+end
+
+
+--- 重设自己清除各个管理者的
+function MVCFacade:RestMe()
+	self._cmdMgr:RemoveAllMember()
+	self._proxyMgr:RemoveAllMember()
+	self._mediatorMgr:RemoveAllMember()
+	self._ObserverMgr:RemoveAllMember()
+end
+
+
+
+
+return MVCFacade
