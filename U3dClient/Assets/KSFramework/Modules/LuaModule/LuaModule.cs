@@ -23,7 +23,7 @@
 
 #endregion
 //#define SLUA
-#define xLua
+
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -39,6 +39,10 @@ using XLua;
 //using LuaTypes = LuaInterface.LuaTypes;
 
 #endif
+
+ 
+   
+   
 
 namespace KSFramework
 {
