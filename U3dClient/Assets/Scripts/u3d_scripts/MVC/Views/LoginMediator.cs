@@ -4,7 +4,7 @@ using PureMVC.Patterns;
 using UnityEngine;
 using mmowar;
 using UnityEngine.EventSystems;
-using KBEngine;
+//using KBEngine;
 
 /// <summary>
 ///  获取用户名与交涉
