@@ -1,0 +1,48 @@
+--- Time: 2019/1/24 11:27
+--- Auth: ZJy
+--- 功能 多个命令
+
+SampleCmd = require("SampleCmd")
+MultipleCmd = Class(SampleCmd)
+
+---new de 时候回调回调构造方法
+function MultipleCmd:ctor()
+	self.subCmd = {}
+end
+
+function MultipleCmd:Execute(sender,param)
+	for i,cmd in pairs(self.subCmd) do
+		cmd.Execute(sender,param)
+	end
+end
+
+--- 添加子命令
+function MultipleCmd:AddSubCmd(cmdcode,Cmd)
+	if self.subCmd[cmdcode] then
+		self.subCmd[cmdcode].super:dector()
+		self.subCmd[cmdcode] = nil
+	end
+	self.subCmd[cmdcode] = Cmd
+end
+
+
+function MultipleCmd:RemoveSubCmd(cmdcode)
+	if self.subCmd[cmdcode] then
+		self.subCmd[cmdcode].super:dector()
+		self.subCmd[cmdcode] = nil
+	end
+	table.remove(self.subCmd,cmdcode)
+end
+
+
+return MultipleCmd
+
+
+
+
+
+
+ 
+
+
+

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\soonyo\.Rider2018.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\soonyo\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_U3dClient.-1944355595.00" t="ExcludeRecursive" />
-    <e p="F:\kbeClient\U3dClient" t="IncludeRecursive">
+    <e p="C:\Users\asus\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\asus\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_U3dClient.-1390327931.00" t="ExcludeRecursive" />
+    <e p="E:\Github\kbeClient\U3dClient" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
@@ -11,7 +11,6 @@
         <e p="AppSettings.cs" t="Include" />
         <e p="Code" t="Include">
           <e p="Game.cs" t="Include" />
-          <e p="XLuaCustomExport.cs" t="Include" />
         </e>
         <e p="DOTween" t="Include">
           <e p="DOTween43.xml" t="Include" />
@@ -25,6 +24,7 @@
           <e p="ImageSlicer.cs" t="Include" />
           <e p="SpritePacker.cs" t="Include" />
           <e p="TestSaveSprite.cs" t="Include" />
+          <e p="XLuaCustomExport.cs" t="Include" />
         </e>
         <e p="KSFramework" t="Include">
           <e p="Editor" t="Include">
@@ -192,6 +192,7 @@
             <e p="AvatarBase.cs" t="Include" />
             <e p="Blowfish.cs" t="Include" />
             <e p="Bundle.cs" t="Include" />
+            <e p="ClientSDKUpdater.cs" t="Include" />
             <e p="CustomDataTypes.cs" t="Include" />
             <e p="DataTypes.cs" t="Include" />
             <e p="Dbg.cs" t="Include" />
@@ -203,19 +204,11 @@
             <e p="EntityCall.cs" t="Include" />
             <e p="EntityCallAccountBase.cs" t="Include" />
             <e p="EntityCallAvatarBase.cs" t="Include" />
-            <e p="EntityCallGateBase.cs" t="Include" />
-            <e p="EntityCallMonsterBase.cs" t="Include" />
-            <e p="EntityCallNPCBase.cs" t="Include" />
             <e p="EntityCallSpaceBase.cs" t="Include" />
-            <e p="EntityCallSpaceDuplicateBase.cs" t="Include" />
-            <e p="EntityCallSpacesBase.cs" t="Include" />
-            <e p="EntityCallSpawnPointBase.cs" t="Include" />
-            <e p="EntityCallTestBase.cs" t="Include" />
-            <e p="EntityCallTestNoBaseBase.cs" t="Include" />
+            <e p="EntityCallSpaceMgrBase.cs" t="Include" />
             <e p="EntityComponent.cs" t="Include" />
             <e p="EntityDef.cs" t="Include" />
             <e p="Event.cs" t="Include" />
-            <e p="GateBase.cs" t="Include" />
             <e p="KBEMain.cs" t="Include" />
             <e p="KBEngine.cs" t="Include" />
             <e p="KBEngineArgs.cs" t="Include" />
@@ -227,11 +220,9 @@
             <e p="MessageReaderTCP.cs" t="Include" />
             <e p="Messages.cs" t="Include" />
             <e p="Method.cs" t="Include" />
-            <e p="MonsterBase.cs" t="Include" />
             <e p="NetworkInterfaceBase.cs" t="Include" />
             <e p="NetworkInterfaceKCP.cs" t="Include" />
             <e p="NetworkInterfaceTCP.cs" t="Include" />
-            <e p="NPCBase.cs" t="Include" />
             <e p="ObjectPool.cs" t="Include" />
             <e p="PacketReceiverBase.cs" t="Include" />
             <e p="PacketReceiverKCP.cs" t="Include" />
@@ -244,11 +235,7 @@
             <e p="ScriptModule.cs" t="Include" />
             <e p="ServerErrorDescrs.cs" t="Include" />
             <e p="SpaceBase.cs" t="Include" />
-            <e p="SpaceDuplicateBase.cs" t="Include" />
-            <e p="SpacesBase.cs" t="Include" />
-            <e p="SpawnPointBase.cs" t="Include" />
-            <e p="TestBase.cs" t="Include" />
-            <e p="TestNoBaseBase.cs" t="Include" />
+            <e p="SpaceMgrBase.cs" t="Include" />
           </e>
         </e>
         <e p="Scripts" t="Include">

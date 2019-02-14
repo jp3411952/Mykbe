@@ -1,0 +1,31 @@
+--- Time: 2019/1/24 11:24
+--- Auth: ZJy
+--- 功能
+
+
+SampleCmd = Class()
+
+---Class回调构造方法
+function SampleCmd:ctor(facade)
+	self._Facade = facade
+end
+function SampleCmd:dector()
+	self._Facade = nil
+end
+function SampleCmd:Execute(sender,param)
+    
+end
+
+
+
+return SampleCmd
+
+
+
+
+
+
+ 
+
+
+

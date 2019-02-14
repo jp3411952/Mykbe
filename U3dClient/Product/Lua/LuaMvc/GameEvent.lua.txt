@@ -1,0 +1,38 @@
+--- Time: 2019/1/24 14:41
+--- Auth: ZJy
+--- 功能
+
+
+LuaActionKey =
+{
+	None = 0,
+	StartGame = {1,"StartGame"},
+	CreateLuaView = {2,"CreateLuaView"},
+	LogoutGame = {10000,"LogoutGame"},
+}
+
+local MvcFacade = nil
+
+function   StartGame()
+	if MvcFacade == nil then
+		MvcFacade = GetMvcFacade()
+	end
+	print('luastartgame')
+	
+	MvcFacade:Init()
+end
+
+
+
+function LogoutGame()
+	
+end
+
+
+
+
+--注册全局函数
+CS.LuaFacade.RegisterGlobalFunction(LuaActionKey.StartGame[1],LuaActionKey.StartGame[2])
+
+
+

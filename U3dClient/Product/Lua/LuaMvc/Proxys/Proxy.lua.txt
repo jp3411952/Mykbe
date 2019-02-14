@@ -1,0 +1,16 @@
+--- 创建时间: 2019/1/27 22:30
+--- 作者: zjy
+--- 功能: 
+
+local Proxy = Class()
+
+function Proxy:ctor(facade)
+	self._Facade = facade
+end
+
+
+function Proxy:dector()
+	self._Facade = nil
+end
+
+return Proxy

@@ -1,0 +1,12 @@
+--- 创建时间: 2019/1/27 0:20
+--- 作者: zjy
+--- 功能: c# 的类名
+---
+CsClassStr =
+{
+	InputFieldStr ="InputField",
+	ButtonStr ="Button",
+}
+
+
+return CsClassStr

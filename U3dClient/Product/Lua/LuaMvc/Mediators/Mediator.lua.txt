@@ -1,0 +1,16 @@
+--- 创建时间: 2019/1/27 22:26
+--- 作者: zjy
+--- 功能: 
+
+local Mediator = Class()
+
+---构造函数
+function Mediator:ctor(facade)
+	self._Facade = facade
+end
+
+
+function Mediator:dector()
+	self._Facade = nil
+end
+return Mediator
