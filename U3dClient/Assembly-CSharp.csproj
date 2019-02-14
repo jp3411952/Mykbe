@@ -132,6 +132,9 @@
     <Compile Include="Assets\KSFramework\Modules\UI\UGUISLuaBridge.cs" />
     <Compile Include="Assets\KSFramework\Modules\UI\UILuaOutlet.cs" />
     <Compile Include="Assets\KSFramework\Modules\UI\UILuaOutletCollection.cs" />
+    <Compile Include="Assets\Scripts\Extension\Event.cs" />
+    <Compile Include="Assets\Scripts\Extension\objectExtension.cs" />
+    <Compile Include="Assets\Scripts\Extension\stringExtension.cs" />
     <Compile Include="Assets\Scripts\PureMVCFramework\Core\Controller.cs" />
     <Compile Include="Assets\Scripts\PureMVCFramework\Core\Model.cs" />
     <Compile Include="Assets\Scripts\PureMVCFramework\Core\Notifier.cs" />
